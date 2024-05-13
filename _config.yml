@@ -16,7 +16,7 @@ timezone: Europe/Istanbul
 
 title: Umut Utku Ersahince # the main title
 
-tagline: Personal Blog # it will display as the sub-title
+tagline: My Personal Blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   My personal blog where you can find my projects, ideas and CV.
