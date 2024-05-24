@@ -1,6 +1,6 @@
 ---
 title: Initial Observations on Newt's Backend
-date: 2024-05-14 23:47:00 +0300
+date: 2024-05-24 23:47:00 +0300
 categories: # [TOP, SUB]
 tags: gsoc
 author: uue
