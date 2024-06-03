@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Umut Utku Ersahince</title>
   <subtitle>My personal blog where you can find my projects, ideas, CV and more.</subtitle>
-  <updated>2024-05-24T23:51:05+03:00</updated>
+  <updated>2024-06-03T16:59:48+03:00</updated>
   <author>
     <name>Umut Utku Ersahince</name>
     <uri>http://localhost:4000/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>Initial Observations on Newt's Backend</title>
     <link href="http://localhost:4000/posts/initial-observations-on-newt's-backend/" rel="alternate" type="text/html" title="Initial Observations on Newt&amp;apos;s Backend" />
-    <published>2024-05-14T23:47:00+03:00</published>
+    <published>2024-05-24T23:47:00+03:00</published>
   
-    <updated>2024-05-14T23:47:00+03:00</updated>
+    <updated>2024-05-24T23:58:33+03:00</updated>
   
     <id>http://localhost:4000/posts/initial-observations-on-newt's-backend/</id>
     <content src="http://localhost:4000/posts/initial-observations-on-newt's-backend/" />
