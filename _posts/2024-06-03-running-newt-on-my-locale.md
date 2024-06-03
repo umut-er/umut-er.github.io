@@ -20,12 +20,12 @@ This was not the only change I had to make though. I added the following:
 ```json
 "overrides": {
     "graceful-fs": "^4.2.11"
-  },
+  }
 ```
 to the `package.json` of `sbgnviz.js`. The reason is related to some conflict related to `gulp`. To go into more detail, please review [this](https://stackoverflow.com/questions/55921442/how-to-fix-referenceerror-primordials-is-not-defined-in-node-js) stackoverflow post. Also, I had to update the `jquery` versions in `sbgnviz.js` and `chise.js` from `^2.2.4` to `^3.3.1`. After these dependency updates, I was able to run Newt on my local computer without any issues.  
 This might not be an "honest" solution, because there was no merging changes from cytoscape.js 3.3.0. I am certainly planning to look at that as well now that I feel like I understand the project better. However, this shows that there are going to be no further issues related to dependency conflicts after these.
 
-## sbgn.js (1)
+## sbgn.js (1) 
 When I said "I was able to run Newt on my local computer without any issues," I lied. There is one more, which is related to the sbgn.isActive() method I was talking about in my previous blog post. This method is nowhere to be found. Even when I ran the entire application (The stack looks something like `cytoscape.js` -> `sbgnviz.js` -> `chise.js` -> `Newt`, however, the lower down projects are not necessarily independent of the projects utilizing them. For example, `cytoscape.js` cannot be used without `sbgnviz.js`), this method was not declared anywhere. I added a temporary fix, see below:
 ```js
 // Temporary
@@ -71,8 +71,8 @@ Date:   Thu Jun 30 15:38:14 2022 +0300
 ```
 These commits are the ones just before I started working on this project (in terms of commits, not time). Inspecting the mail address, it seems that these commits are made by an undergraduate student, Selbi Ereshova, as part of another [GSoC project](https://summerofcode.withgoogle.com/archive/2022/projects/7cXTK3p5). These were in 2022. I don't know what happened to isActive() between then and now.
 
-## sbgn.js (2)
-I mentioned in my previous post that I wanted to move sbgn implementations from `sbgnviz.js` to `cytoscape.js`. This turned out to be harder than expected. I think this is because of a cyclic dependency between `node-shapes.js` and `sbgn.js`. I have no idea how to solve this, or how moving these implementations to `sbgnviz.js` solves this issue. I have, in the commit history of my fork of cytoscape.js, [a commit](https://github.com/iVis-at-Bilkent/cytoscape.js/commit/e896df9cd78a0c14011d5b317b7c31725caa9255) where I moved all the sbgn implementations. I am not able to use this as a normal cytoscape.js version, possibly because of the said cyclic dependency issue. This will be something I will be investigating in the future for sure.
+## sbgn.js (2) 
+I mentioned in [my previous post]({% post_url 2024-05-24-initial-observations-on-newt's-backend %}) that I wanted to move sbgn implementations from `sbgnviz.js` to `cytoscape.js`. This turned out to be harder than expected. I think this is because of a cyclic dependency between `node-shapes.js` and `sbgn.js`. I have no idea how to solve this, or how moving these implementations to `sbgnviz.js` solves this issue. I have, in the commit history of my fork of cytoscape.js, [a commit](https://github.com/iVis-at-Bilkent/cytoscape.js/commit/e896df9cd78a0c14011d5b317b7c31725caa9255) where I moved all the sbgn implementations. I am not able to use this as a normal cytoscape.js version, possibly because of the said cyclic dependency issue. This will be something I will be investigating in the future for sure.
 
-## Conclusion
+## Conclusion
 I have detected some of the issues that were troubling me and found solutions to some of them. In the blog post I went over some of the things I am thinking about doing in the future. I am getting more familiar with the codebase, which is certainly going to be very helpful in the future. 
