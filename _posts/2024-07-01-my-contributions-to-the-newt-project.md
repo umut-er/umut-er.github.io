@@ -15,7 +15,7 @@ mermaid: true
 So, I have been working on the [Newt](https://web.newteditor.org/) project (which is a project about what is usually called "systems biology", especially visualizing biological pathways) for about three weeks (not counting Eid). I will go through my contributions in chronological order below.
 
 ## Creating an SBML Legend
-A "legend" is defined as `the wording on a map or diagram explaining the symbols used` for those of you who are not familiar with that sense of the word. SBML stands for `Systems Biology Markup Language` which is linked with something called `CellDesigner`. None of these are terribly important for you to know fully. Here is a quick explanation:  
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/696) A "legend" is defined as `the wording on a map or diagram explaining the symbols used` for those of you who are not familiar with that sense of the word. SBML stands for `Systems Biology Markup Language` which is linked with something called `CellDesigner`. None of these are terribly important for you to know fully. Here is a quick explanation:  
 SBML is a way to define and show biochemical reactions with certain signs such that there is very little confusion about the meaning of the symbols. A legend is a document (briefly) explaining these symbols and their meanings. Here is the official CellDesigner legend:
 
 
@@ -34,7 +34,7 @@ This was then integrated into the application. It now looks like this:
 Overall, I would say that this was a relatively simple although somewhat time consuming task since I had to create this image using [inkscape](https://inkscape.org/), which was not something I was familiar with.
 
 ## Query Highlighting
-There exists a database called [PathwayCommons](https://www.pathwaycommons.org/) which contains a lot of biological pathways and interactions (mainly between genes). These database services have what's called an API (stands for `Application Programming Interface`). What an API allows us to do is asking these services some data (in this case, it is giving us information about pathways). In Newt, there is an interface which allows us to make API requests (that is, asking a web service for some information) and display the result in a user friendly way. Here is a demonstratiton (warning: most of this video is the load screen, feel free to move to the 20s-25s mark):
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/389) There exists a database called [PathwayCommons](https://www.pathwaycommons.org/) which contains a lot of biological pathways and interactions (mainly between genes). These database services have what's called an API (stands for `Application Programming Interface`). What an API allows us to do is asking these services some data (in this case, it is giving us information about pathways). In Newt, there is an interface which allows us to make API requests (that is, asking a web service for some information) and display the result in a user friendly way. Here is a demonstratiton (warning: most of this video is the load screen, feel free to move to the 20s-25s mark):
 {% 
 	include embed/video.html 
 	src='/assets/video/old-query-showcase.mp4' 
@@ -51,7 +51,7 @@ There are also more colorful queries, especially ones with both source and targe
 ![Colorful Query Result](/assets/img/colorful-coded-query.png)
 
 ## Underlay Highlighting
-Well, in order to show the previous one, I had to show you this one as well, so, brief let me be. Newt originally had a highlight feature. It looked like this:
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/713) Well, in order to show the previous one, I had to show you this one as well, so, brief let me be. Newt originally had a highlight feature. It looked like this:
 
 
 ![Old Highlight Feature](/assets/img/old-highlight.png)  
@@ -67,7 +67,7 @@ This is a better highlighter for a couple of reasons:
 2. It doesn't interfere with situations where the color of the edges have significance.
 
 ## Map Type Display on Tabs
-We already talked about how we represent maps with symbols and legends. However, people have come up with different sets of symbols and legends over the years. Newt currently implements `PD` (process description), `AF` (activity flow), `SIF` (simple interaction format), `SBML` (systems biology markup language) and a combination of these. Every image that I can generate has uses at least one (possibly a combination of) the symbols of these dialects. This is called the "type" of the map. Previously, we could see the type of the map from the sidebar:
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/715) We already talked about how we represent maps with symbols and legends. However, people have come up with different sets of symbols and legends over the years. Newt currently implements `PD` (process description), `AF` (activity flow), `SIF` (simple interaction format), `SBML` (systems biology markup language) and a combination of these. Every image that I can generate has uses at least one (possibly a combination of) the symbols of these dialects. This is called the "type" of the map. Previously, we could see the type of the map from the sidebar:
 
 
 ![Old Map Type](/assets/img/map-type-demo-old.png)  
@@ -81,12 +81,14 @@ After my visual changes, this is now how it looks (pay extra attention to the bl
 
 As you can see, there is some visual change in the blue marked parts (marked in the previous picture). First of all, the map type is now shown on the tabs on the bottom right. Also, there is now a shadow effect on the tabs (in both blue marked places). This is technically called a `box-shadow`, which enhances the visuals.
 
-## About a Bug I Found
-A bug is defined as an error in a computer program or system. During my time working on the Newt project, I also found some issues with the works of other people working there. I don't want to go into details, suffice it to say that there was some weird behavior with a pop-up panel. I pointed this out and also helped in implementing the ideal behavior for smoother user experience.
+## About Some Small Bugs
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/719) A bug is defined as an error in a computer program or system. During my time working on the Newt project, I also found some issues with the works of other people working there. I don't want to go into details, suffice it to say that there was some weird behavior with a pop-up panel. I pointed this out and also helped in implementing the ideal behavior for smoother user experience. 
+
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/723) There was a small issue related to map loading that I fixed as well.
 
 
 ## Query Result Simplification
-Remember this picture?
+[GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/722) Remember this picture?
 
 
 ![Remember Me?](/assets/img/colorful-coded-query.png)

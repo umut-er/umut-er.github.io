@@ -1421,7 +1421,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1086 words"
+  title="1113 words"
 >
   <em>6 min</em> read</span>
 
@@ -1435,7 +1435,7 @@
 <p>So, I have been working on the <a href="https://web.newteditor.org/">Newt</a> project (which is a project about what is usually called “systems biology”, especially visualizing biological pathways) for about three weeks (not counting Eid). I will go through my contributions in chronological order below.</p>
 
 <h2 id="creating-an-sbml-legend"><span class="me-2">Creating an SBML Legend</span><a href="#creating-an-sbml-legend" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>A “legend” is defined as <code class="language-plaintext highlighter-rouge">the wording on a map or diagram explaining the symbols used</code> for those of you who are not familiar with that sense of the word. SBML stands for <code class="language-plaintext highlighter-rouge">Systems Biology Markup Language</code> which is linked with something called <code class="language-plaintext highlighter-rouge">CellDesigner</code>. None of these are terribly important for you to know fully. Here is a quick explanation:<br />
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/696">GitHub Issue</a> A “legend” is defined as <code class="language-plaintext highlighter-rouge">the wording on a map or diagram explaining the symbols used</code> for those of you who are not familiar with that sense of the word. SBML stands for <code class="language-plaintext highlighter-rouge">Systems Biology Markup Language</code> which is linked with something called <code class="language-plaintext highlighter-rouge">CellDesigner</code>. None of these are terribly important for you to know fully. Here is a quick explanation:<br />
 SBML is a way to define and show biochemical reactions with certain signs such that there is very little confusion about the meaning of the symbols. A legend is a document (briefly) explaining these symbols and their meanings. Here is the official CellDesigner legend:</p>
 
 <p><a href="/assets/img/CellDesigner.png" class="popup img-link  shimmer"><img src="/assets/img/CellDesigner.png" alt="CellDesigner Legend" loading="lazy"></a>.<br />
@@ -1472,7 +1472,7 @@ I was tasked with making a similar legend and integrating it to the application.
 <p>Overall, I would say that this was a relatively simple although somewhat time consuming task since I had to create this image using <a href="https://inkscape.org/">inkscape</a>, which was not something I was familiar with.</p>
 
 <h2 id="query-highlighting"><span class="me-2">Query Highlighting</span><a href="#query-highlighting" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>There exists a database called <a href="https://www.pathwaycommons.org/">PathwayCommons</a> which contains a lot of biological pathways and interactions (mainly between genes). These database services have what’s called an API (stands for <code class="language-plaintext highlighter-rouge">Application Programming Interface</code>). What an API allows us to do is asking these services some data (in this case, it is giving us information about pathways). In Newt, there is an interface which allows us to make API requests (that is, asking a web service for some information) and display the result in a user friendly way. Here is a demonstratiton (warning: most of this video is the load screen, feel free to move to the 20s-25s mark):</p>
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/389">GitHub Issue</a> There exists a database called <a href="https://www.pathwaycommons.org/">PathwayCommons</a> which contains a lot of biological pathways and interactions (mainly between genes). These database services have what’s called an API (stands for <code class="language-plaintext highlighter-rouge">Application Programming Interface</code>). What an API allows us to do is asking these services some data (in this case, it is giving us information about pathways). In Newt, there is an interface which allows us to make API requests (that is, asking a web service for some information) and display the result in a user friendly way. Here is a demonstratiton (warning: most of this video is the load screen, feel free to move to the 20s-25s mark):</p>
 
 <p>
   <video class="embed-video file" controls="">
@@ -1507,7 +1507,7 @@ I was tasked with making a similar legend and integrating it to the application.
 <p><a href="/assets/img/colorful-coded-query.png" class="popup img-link  shimmer"><img src="/assets/img/colorful-coded-query.png" alt="Colorful Query Result" loading="lazy"></a></p>
 
 <h2 id="underlay-highlighting"><span class="me-2">Underlay Highlighting</span><a href="#underlay-highlighting" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Well, in order to show the previous one, I had to show you this one as well, so, brief let me be. Newt originally had a highlight feature. It looked like this:</p>
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/713">GitHub Issue</a> Well, in order to show the previous one, I had to show you this one as well, so, brief let me be. Newt originally had a highlight feature. It looked like this:</p>
 
 <p><a href="/assets/img/old-highlight.png" class="popup img-link  shimmer"><img src="/assets/img/old-highlight.png" alt="Old Highlight Feature" loading="lazy"></a></p>
 
@@ -1522,7 +1522,7 @@ I was tasked with making a similar legend and integrating it to the application.
 </ol>
 
 <h2 id="map-type-display-on-tabs"><span class="me-2">Map Type Display on Tabs</span><a href="#map-type-display-on-tabs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>We already talked about how we represent maps with symbols and legends. However, people have come up with different sets of symbols and legends over the years. Newt currently implements <code class="language-plaintext highlighter-rouge">PD</code> (process description), <code class="language-plaintext highlighter-rouge">AF</code> (activity flow), <code class="language-plaintext highlighter-rouge">SIF</code> (simple interaction format), <code class="language-plaintext highlighter-rouge">SBML</code> (systems biology markup language) and a combination of these. Every image that I can generate has uses at least one (possibly a combination of) the symbols of these dialects. This is called the “type” of the map. Previously, we could see the type of the map from the sidebar:</p>
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/715">GitHub Issue</a> We already talked about how we represent maps with symbols and legends. However, people have come up with different sets of symbols and legends over the years. Newt currently implements <code class="language-plaintext highlighter-rouge">PD</code> (process description), <code class="language-plaintext highlighter-rouge">AF</code> (activity flow), <code class="language-plaintext highlighter-rouge">SIF</code> (simple interaction format), <code class="language-plaintext highlighter-rouge">SBML</code> (systems biology markup language) and a combination of these. Every image that I can generate has uses at least one (possibly a combination of) the symbols of these dialects. This is called the “type” of the map. Previously, we could see the type of the map from the sidebar:</p>
 
 <p><a href="/assets/img/map-type-demo-old.png" class="popup img-link  shimmer"><img src="/assets/img/map-type-demo-old.png" alt="Old Map Type" loading="lazy"></a></p>
 
@@ -1532,11 +1532,13 @@ I was tasked with making a similar legend and integrating it to the application.
 
 <p>As you can see, there is some visual change in the blue marked parts (marked in the previous picture). First of all, the map type is now shown on the tabs on the bottom right. Also, there is now a shadow effect on the tabs (in both blue marked places). This is technically called a <code class="language-plaintext highlighter-rouge">box-shadow</code>, which enhances the visuals.</p>
 
-<h2 id="about-a-bug-i-found"><span class="me-2">About a Bug I Found</span><a href="#about-a-bug-i-found" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>A bug is defined as an error in a computer program or system. During my time working on the Newt project, I also found some issues with the works of other people working there. I don’t want to go into details, suffice it to say that there was some weird behavior with a pop-up panel. I pointed this out and also helped in implementing the ideal behavior for smoother user experience.</p>
+<h2 id="about-some-small-bugs"><span class="me-2">About Some Small Bugs</span><a href="#about-some-small-bugs" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/719">GitHub Issue</a> A bug is defined as an error in a computer program or system. During my time working on the Newt project, I also found some issues with the works of other people working there. I don’t want to go into details, suffice it to say that there was some weird behavior with a pop-up panel. I pointed this out and also helped in implementing the ideal behavior for smoother user experience.</p>
+
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/723">GitHub Issue</a> There was a small issue related to map loading that I fixed as well.</p>
 
 <h2 id="query-result-simplification"><span class="me-2">Query Result Simplification</span><a href="#query-result-simplification" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Remember this picture?</p>
+<p><a href="https://github.com/iVis-at-Bilkent/newt/issues/722">GitHub Issue</a> Remember this picture?</p>
 
 <p><a href="/assets/img/colorful-coded-query.png" class="popup img-link  shimmer"><img src="/assets/img/colorful-coded-query.png" alt="Remember Me?" loading="lazy"></a></p>
 
@@ -1665,6 +1667,13 @@ I was tasked with making a similar legend and integrating it to the application.
   <section id="access-lastmod">
     <h2 class="panel-heading">Recently Updated</h2>
     <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/my-contributions-to-the-newt-project-part-2/">My Contributions to the Newt Project Part 2</a>
+        </li>
       
         
         
@@ -1805,6 +1814,18 @@ I was tasked with making a similar legend and integrating it to the application.
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1818,6 +1839,34 @@ I was tasked with making a similar legend and integrating it to the application.
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/my-contributions-to-the-newt-project-part-2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1722513000"
+  data-df="ll"
+  
+>
+  Aug  1, 2024
+</time>
+
+              <h4 class="pt-0 my-2">My Contributions to the Newt Project Part 2</h4>
+              <div class="text-muted">
+                <p>This is the second part of my contributions blog post.</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/running-newt-on-my-locale/" class="post-preview card h-100">
@@ -1899,9 +1948,13 @@ I was tasked with making a similar legend and integrating it to the application.
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/my-contributions-to-the-newt-project-part-2/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>My Contributions to the Newt Project Part 2</p>
+    </a>
   
 </nav>
 
