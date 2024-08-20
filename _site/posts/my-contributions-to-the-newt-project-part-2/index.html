@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Umut Utku Erşahince" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Umut Utku Erşahince","url":"https://github.com/umut-er/"},"dateModified":"2024-08-01T14:50:00+03:00","datePublished":"2024-08-01T14:50:00+03:00","description":"This is the second part of my contributions blog post.","headline":"My Contributions to the Newt Project Part 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/my-contributions-to-the-newt-project-part-2/"},"url":"http://localhost:4000/posts/my-contributions-to-the-newt-project-part-2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Umut Utku Erşahince","url":"https://github.com/umut-er/"},"dateModified":"2024-08-13T12:48:04+03:00","datePublished":"2024-08-01T14:50:00+03:00","description":"This is the second part of my contributions blog post.","headline":"My Contributions to the Newt Project Part 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/my-contributions-to-the-newt-project-part-2/"},"url":"http://localhost:4000/posts/my-contributions-to-the-newt-project-part-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -998,6 +998,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1723542484"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Aug 13, 2024
+</time>
+
+        </span>
+      
 
       
 
@@ -1043,7 +1066,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1629 words"
+  title="1670 words"
 >
   <em>9 min</em> read</span>
 
@@ -1107,14 +1130,16 @@ The reverse, loading an exported file into the app, is called importing. Some is
 
 <p>Now, there is a reason why I said that this was <code class="language-plaintext highlighter-rouge">our interpretation of the SBML format.</code> That’s because the SBML format is not exact with regards to what visual features we put on the screen. Visually representing a biochemical map is only a secondary concern with SBML. It is more concerned with the integrity of the underlying model which consists of species and reactions (broadly). The format is designed for a machine to understand and simulate whereas something like the SBGN format is designed not to simulate but to show the user what the biological model is.</p>
 
-<p>Why have I explained all this? Well, I want to express that there is not an exact way of storing this visual information in the SBML format even though Newt has these SBML features, which is fine. As I said, it is not an exact standard with respect to the visual features. Luckily, the people who develop this SBML format are relatively smart and recognize that individual softwares might want to go above and beyond what the intention of a pure SBML would be. They include a way of annotating elements through the <code class="language-plaintext highlighter-rouge">&lt;annotation&gt;</code> tag. The contents of this tag can freely ignored by other software packages, which means it includes non-essential software specific information about the underlying model. This is exactly what I am trying to do with this issue.</p>
+<p>Why have I explained all this? Well, I want to express that there is not an exact way of storing this visual information in the SBML format even though Newt has these SBML features, which is fine. As I said, it is not an exact standard with respect to the visual features. Luckily, the people who develop this SBML format are smart people and recognize that individual softwares might want to go above and beyond what the intention of a pure SBML file would be. They include a way of annotating elements through the <code class="language-plaintext highlighter-rouge">&lt;annotation&gt;</code> tag. The contents of this tag can freely ignored by other software packages, which means it includes non-essential software specific information about the underlying model. This is exactly what I am trying to do with this issue.</p>
 
-<p>With all that out of the way, I started working on our annotation scheme. It has some rules outlined in that 180+ page document, but it is not very limiting at all (basically any valid XML with a namespace goes). I developed our format for this and implemented export / import functionality for our software. As of the writing of this blog, this issue is awaitig to be reviewed and closed (it is close at the time of my edit, -UUE).</p>
+<p>With all that out of the way, I started working on our annotation scheme. It has some rules outlined in that 180+ page document, but it is not very limiting at all (basically any valid XML with a namespace goes). I developed our format for this and implemented export / import functionality for our software. As of the writing of this blog, this issue is awaitig to be reviewed and closed (it is closed at the time of edit, -UUE).</p>
 
 <h2 id="conclusion--future-work"><span class="me-2">Conclusion / Future Work</span><a href="#conclusion--future-work" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Well, this was a good amount of work that I outlined. When reading through the SBML documentation, I realized that the most important feature of the SBML format is producing simulations for biochemical reactions. However, there is currently no support for this in Newt. I talked to my mentor and we agreed to talk about this after the release because it would be a long process and delay the release unnecessarily.</p>
 
-<p>At the time of edit, 13th of August, I have prepared a document for SBML simulation support and sent it to my mentor. I expect that the new Newt release will come sometime this month. I have completed</p>
+<p>At the time of edit, 13th of August, I have prepared a document for SBML simulation support and sent it to my mentor. I expect that the new Newt release will come sometime this month.</p>
+
+<p>At the time of second edit, 20th of August, we decided to move forward with the simulation features as outlined in the document. I expect that I will be working to add that feature over the course of the semester, but we will see.</p>
 
 <p>This blog also has more readers than I anticipated initially (Which is admittedly 0. I opened this blog mostly for documenting my work, though I am planning on expanding my scope to talk about books, mathematics or other stuff). I might add a mailing list for people who are interested in being notified when my blogs come out. I might also share an Instagram story about my blog. We will see. Definitely let me know if you are interested in a mailing list (If you are reading this, you can probably access me on either Instagram or Whatsapp).</p>
 
@@ -1239,14 +1264,14 @@ The reverse, loading an exported file into the app, is called importing. Some is
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/my-contributions-to-the-newt-project/">My Contributions to the Newt Project</a>
+          <a href="/posts/my-contributions-to-the-newt-project-part-2/">My Contributions to the Newt Project Part 2</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/my-contributions-to-the-newt-project-part-2/">My Contributions to the Newt Project Part 2</a>
+          <a href="/posts/my-contributions-to-the-newt-project/">My Contributions to the Newt Project</a>
         </li>
       
         

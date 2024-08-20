@@ -14,6 +14,8 @@ mermaid: true
 ## Introduction
 So, I have been working on the [Newt](https://web.newteditor.org/) project (which is a project about what is usually called "systems biology", especially visualizing biological pathways) for about three weeks (not counting Eid). I will go through my contributions in chronological order below.
 
+[Added at the time of the edit, 20th of August] Part 2 is out. You can view it [here]({% post_url 2024-08-01-my-contributions-to-the-newt-project-part-2 %}). If you are viewing this as part of GSOC final submission, you should know that part 2 also covers my work during the program. Nothing else in this blog, except those two blog posts, is part of my submission. I provide the links to specific GitHub issues in both blog posts. You can look at the code from there.
+
 ## Creating an SBML Legend
 [GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/696) A "legend" is defined as `the wording on a map or diagram explaining the symbols used` for those of you who are not familiar with that sense of the word. SBML stands for `Systems Biology Markup Language` which is linked with something called `CellDesigner`. None of these are terribly important for you to know fully. Here is a quick explanation:  
 SBML is a way to define and show biochemical reactions with certain signs such that there is very little confusion about the meaning of the symbols. A legend is a document (briefly) explaining these symbols and their meanings. Here is the official CellDesigner legend:
