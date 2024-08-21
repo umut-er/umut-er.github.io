@@ -19,7 +19,7 @@ This is the second part of my blog post logging the contributions I made to the 
 
 [GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/688) There was a small bug related to a spinner (which is a small animation indicating a load screen) that appears if we try to apply layout an empty map. This was a nice and easy fix.
 
-[Added at the time of the edit, 13th of August] [GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/741) There was a small issue with the SBGN bricks feature, which, as the name suggests, should only work with SBGN formats (specifically, PD). However, it worked with SBML also, which is not intended. I disabled this behaviour.
+`Added at the time of the edit, 13th of August [GitHub Issue](https://github.com/iVis-at-Bilkent/newt/issues/741) There was a small issue with the SBGN bricks feature, which, as the name suggests, should only work with SBGN formats (specifically, PD). However, it worked with SBML also, which is not intended. I disabled this behaviour.
 
 ## Build Box
 [Github Issue](https://github.com/iVis-at-Bilkent/newt/issues/731) This was a suggestion by me. In web development, it is usual to have an internal server (meaning only the people working in a company have access to that server). This server occasionally gets rebuilt (which means updated with the latest changes). In our team, there was some confusion about when this server was last updated, what changes are currently on the internal server ready to be tested, etc... I suggested to include a build box that included the time of the last rebuild of the internal server. It looks like this:
