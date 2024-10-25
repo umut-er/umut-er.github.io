@@ -39,7 +39,7 @@ Now we move on to another concept, the **perfect numbers**, which is first expos
 ## Perfect Numbers and Mersenne Primes
 Before starting this topic, I would like to mention that Veritasium has a [fantastic video](https://www.youtube.com/watch?v=Zrv1EDIqHkY) on this topic. It explains quite a bit of the same theory I am about to explain, but I am planning to give more details and proofs for my statements, while the Veritasium video is more focused on the history. 
 
-Unlike prime numbers, not everyone knows what a **perfect number** is. A **perfect number** is a positive integer that is equal to the sum of its positive proper divisors. Let me immediately follow up with two examples. $6$ is a perfect number. Its positive divisors are $1$, $2$, $3$ and $6$. We exclude $6$ itself, because it is boring. We are left with $$6 = 1 + 2 + 3$$. This condition makes $6$ a perfect number. In a similar way, $$ 28 = 1 + 2 + 4 + 7 + 14 $$. Hence, $28$ is also prime.
+Unlike prime numbers, not everyone knows what a **perfect number** is. A **perfect number** is a positive integer that is equal to the sum of its positive proper divisors. Let me immediately follow up with two examples. $6$ is a perfect number. Its positive divisors are $1$, $2$, $3$ and $6$. We exclude $6$ itself, because it is boring. We are left with $$6 = 1 + 2 + 3$$. This condition makes $6$ a perfect number. In a similar way, $$ 28 = 1 + 2 + 4 + 7 + 14 $$. Hence, $28$ is also a perfect number.
 
 In order to proceed forward it is important to introduce some notation and prove some intermediate results. We will first introduce the divisor function, $$\sigma(n)$$, and prove a critical result.
 <br>
