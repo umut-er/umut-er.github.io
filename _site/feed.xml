@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Umut Utku Ersahince</title>
   <subtitle>My personal blog where you can find my projects, ideas, CV and more.</subtitle>
-  <updated>2024-10-25T16:12:49+03:00</updated>
+  <updated>2025-01-07T21:53:13+03:00</updated>
   <author>
     <name>Umut Utku Ersahince</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,32 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 Umut Utku Ersahince </rights>
+  <rights> © 2025 Umut Utku Ersahince </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Bilkent CS315: A Retrospective</title>
+    <link href="http://localhost:4000/posts/bilkent-cs315-a-retrospective/" rel="alternate" type="text/html" title="Bilkent CS315: A Retrospective" />
+    <published>2025-01-07T16:00:00+03:00</published>
+  
+    <updated>2025-01-07T16:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/bilkent-cs315-a-retrospective/</id>
+    <content src="http://localhost:4000/posts/bilkent-cs315-a-retrospective/" />
+    <author>
+      <name>uue</name>
+    </author>
+
+  
+    
+  
+
+  <summary>In this post I go over a course I took this semester at Bilkent University.</summary>
+
+  </entry>
 
   
   <entry>
@@ -24,7 +46,7 @@
     <link href="http://localhost:4000/posts/about-the-new-largest-prime-number/" rel="alternate" type="text/html" title="About the New Largest Prime Number" />
     <published>2024-10-25T16:00:00+03:00</published>
   
-    <updated>2024-10-25T16:00:00+03:00</updated>
+    <updated>2024-10-25T16:57:22+03:00</updated>
   
     <id>http://localhost:4000/posts/about-the-new-largest-prime-number/</id>
     <content src="http://localhost:4000/posts/about-the-new-largest-prime-number/" />

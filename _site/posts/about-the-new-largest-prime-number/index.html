@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Umut Utku Erşahince" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Umut Utku Erşahince","url":"https://github.com/umut-er/"},"dateModified":"2024-10-25T16:00:00+03:00","datePublished":"2024-10-25T16:00:00+03:00","description":"In this post I explain how the new largest prime number is found and their connection to perfect numbers, a 2500 year old math concept.","headline":"About the New Largest Prime Number","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/about-the-new-largest-prime-number/"},"url":"http://localhost:4000/posts/about-the-new-largest-prime-number/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Umut Utku Erşahince","url":"https://github.com/umut-er/"},"dateModified":"2024-10-25T16:57:22+03:00","datePublished":"2024-10-25T16:00:00+03:00","description":"In this post I explain how the new largest prime number is found and their connection to perfect numbers, a 2500 year old math concept.","headline":"About the New Largest Prime Number","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/about-the-new-largest-prime-number/"},"url":"http://localhost:4000/posts/about-the-new-largest-prime-number/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -778,6 +778,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1729864642"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Oct 25, 2024
+</time>
+
+        </span>
+      
 
       
 
@@ -823,7 +846,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2982 words"
+  title="2984 words"
 >
   <em>16 min</em> read</span>
 
@@ -862,7 +885,7 @@
 <h2 id="perfect-numbers-and-mersenne-primes"><span class="me-2">Perfect Numbers and Mersenne Primes</span><a href="#perfect-numbers-and-mersenne-primes" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Before starting this topic, I would like to mention that Veritasium has a <a href="https://www.youtube.com/watch?v=Zrv1EDIqHkY">fantastic video</a> on this topic. It explains quite a bit of the same theory I am about to explain, but I am planning to give more details and proofs for my statements, while the Veritasium video is more focused on the history.</p>
 
-<p>Unlike prime numbers, not everyone knows what a <strong>perfect number</strong> is. A <strong>perfect number</strong> is a positive integer that is equal to the sum of its positive proper divisors. Let me immediately follow up with two examples. $6$ is a perfect number. Its positive divisors are $1$, $2$, $3$ and $6$. We exclude $6$ itself, because it is boring. We are left with \(6 = 1 + 2 + 3\). This condition makes $6$ a perfect number. In a similar way, \(28 = 1 + 2 + 4 + 7 + 14\). Hence, $28$ is also prime.</p>
+<p>Unlike prime numbers, not everyone knows what a <strong>perfect number</strong> is. A <strong>perfect number</strong> is a positive integer that is equal to the sum of its positive proper divisors. Let me immediately follow up with two examples. $6$ is a perfect number. Its positive divisors are $1$, $2$, $3$ and $6$. We exclude $6$ itself, because it is boring. We are left with \(6 = 1 + 2 + 3\). This condition makes $6$ a perfect number. In a similar way, \(28 = 1 + 2 + 4 + 7 + 14\). Hence, $28$ is also a perfect number.</p>
 
 <p>In order to proceed forward it is important to introduce some notation and prove some intermediate results. We will first introduce the divisor function, \(\sigma(n)\), and prove a critical result.
 <br /></p>
@@ -1319,6 +1342,13 @@ return true
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/bilkent-cs315-a-retrospective/">Bilkent CS315: A Retrospective</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/about-the-new-largest-prime-number/">About the New Largest Prime Number</a>
         </li>
       
@@ -1367,10 +1397,6 @@ return true
     
     
     
-      
-        
-        
-
   
     
     
@@ -1380,18 +1406,6 @@ return true
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1413,6 +1427,57 @@ return true
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1429,6 +1494,13 @@ return true
         
         
 
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1472,6 +1544,9 @@ return true
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/gsoc/">gsoc</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/bilkent/">bilkent</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/computation/">computation</a>
@@ -1570,9 +1645,13 @@ return true
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/bilkent-cs315-a-retrospective/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Bilkent CS315: A Retrospective</p>
+    </a>
   
 </nav>
 
@@ -1593,7 +1672,7 @@ return true
   "
 >
   <p>©
-    <time>2024</time>
+    <time>2025</time>
 
     
       <a href="https://twitter.com/">Umut Utku Ersahince</a>.
@@ -1653,10 +1732,6 @@ return true
     
     
     
-      
-        
-        
-
   
     
     
@@ -1666,18 +1741,6 @@ return true
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1699,6 +1762,57 @@ return true
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1715,6 +1829,13 @@ return true
         
         
 
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1758,6 +1879,9 @@ return true
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/gsoc/">gsoc</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/bilkent/">bilkent</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/computation/">computation</a>
